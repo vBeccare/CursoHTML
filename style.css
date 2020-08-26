@@ -18,3 +18,8 @@ p{
 a{
     text-decoration: none;
 }
+
+#fonte{
+    color:#ccc;
+    font-family: Arial, Helvetica, sans-serif;
+}
