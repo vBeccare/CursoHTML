@@ -3,7 +3,20 @@ body{
 }
 
 h1{
+    background-color: rgb(17, 17, 134);
     color: white;
+
+    /* O height e o width nao conta com o padding, logo o padding é um valor a mais. */
+    /* margin: 10px 90px 90px; em cima/ lados/ embaixo */
+    padding: 50px;
+    margin-top: 50px;
+    margin-left: 10%;
+    width: 600px;
+    height: 50px;
+
+    border: dashed 5px black;
+    border-bottom:solid 5px white ;
+    border-top:solid 5px white ;
     /* Para deixar as letras com formato de maisuculas */
     font-variant:small-caps ;
 }
@@ -22,4 +35,13 @@ a{
 #fonte{
     color:#ccc;
     font-family: Arial, Helvetica, sans-serif;
+}
+a:visited{
+    color: #311111;
+}
+a:link{
+    color: aqua;
+}
+a:hover{
+    font-size: 30px ;
 }
