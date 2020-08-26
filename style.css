@@ -4,6 +4,8 @@ body{
 
 h1{
     color: white;
+    /* Para deixar as letras com formato de maisuculas */
+    font-variant:small-caps ;
 }
 p{
     font-size: 20px;
@@ -11,4 +13,8 @@ p{
 
 .another{
     color: white;
+}
+
+a{
+    text-decoration: none;
 }
