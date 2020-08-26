@@ -45,3 +45,12 @@ a:link{
 a:hover{
     font-size: 30px ;
 }
+a:active{
+    color: orange;
+}
+ul li{
+    list-style-type: square;
+}
+ol li{
+    list-style-type: upper-roman;
+}
