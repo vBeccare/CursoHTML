@@ -1,0 +1,25 @@
+@media (min-width: 1600px){
+    h1{
+        font-size: 100px;
+    }
+    h2{
+        font-size: 80px;
+        text-indent: 20px;
+        border-bottom: solid 6px rgb(5, 51, 151);
+    }
+    p{
+        font-size: 30px;
+        font-weight: 300;
+    }
+    h3{
+        font-size: 40px;
+        font-weight: 600;
+    }
+    h4{
+        font-size: 36px;
+        font-weight: 400;
+    }
+    .main .espaco{
+        margin-bottom: 150px;
+    }
+}

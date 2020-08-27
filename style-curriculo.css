@@ -9,6 +9,10 @@ body{
     
 }
 
+.main .espaco{
+    margin-bottom: 80px;
+}
+
 h1{
     font-weight: 600;
     color: rgb(14, 126, 48);
@@ -41,3 +45,4 @@ a{
 li{
   
 }
+
