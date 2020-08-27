@@ -1,5 +1,5 @@
 body{
-    font-family: American Typewriter;
+    font-family: American Typewriter,sans-serif;
     
     
 }
@@ -47,6 +47,11 @@ a{
     text-decoration-line: none;
 }
 li{
+  list-style-position: inside;
+  font-size: 30px;
   
 }
-
+ul{
+   
+    padding-left: 0;
+}
