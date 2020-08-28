@@ -14,7 +14,7 @@ body{
 .principalheader{
     background-image: url("/ProjetoCSS_inicio/imagens/bg-3.jpg");
     background-size: cover;
-    height: 500px;
+    height: 600px;
     background-position: right center;
     background-repeat: no-repeat;
     border-top: 1px solid transparent;
@@ -24,6 +24,7 @@ body{
     width: 80%;
     margin: 10px auto;
     text-align: center;
+    margin-top: 200px;
 
 }
 
@@ -62,6 +63,12 @@ body{
     font-size: 46px;
     text-shadow: 5px 5px 4px #333;
 }
+.tituloheader p{
+    background-color: rgba(0,0,0, .7);
+    display: inline-block;
+    padding: 10px;
+    border-bottom: 2px solid white;
+}
 main{
     width: 80%;
     margin: auto;
@@ -71,15 +78,24 @@ main{
     background-color: white;
     margin-top: 15px;
     justify-content: space-between;
-    padding: px;
-    
-    
+    padding: 10px;
+    overflow: auto;
 }
 
 .card{
-    margin: 10px 20px;
-    text-align: center;
+    width: 33%;
+    float: left;
     background-color: rgb(65, 64, 64);
+    margin-right: 10px;
+    
+}
+
+.card img{
+    width: 100%;
+}
+
+.card p{
+    padding: 10px;
 }
 
 article{
