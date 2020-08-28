@@ -1,0 +1,105 @@
+.container{
+    max-width: 1280px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+body{
+    color: white;
+    background-color: gray;
+    font-family: arial,sans-serif;
+    margin: 0;
+    
+}
+.principalheader{
+    background-image: url("/ProjetoCSS_inicio/imagens/bg-3.jpg");
+    background-size: cover;
+    height: 500px;
+    background-position: right center;
+    background-repeat: no-repeat;
+    border-top: 1px solid transparent;
+}
+
+.tituloheader{
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+
+}
+
+ .listamenu{
+    width: 100%;
+    text-align: right;
+    margin-top: 20px;
+    padding-left: 0;
+    
+}
+.listamenu li{
+    display: inline-block;
+    list-style: none;
+    
+    border: solid 1px white;
+    margin-right: 15px;
+    
+    align-items: center;
+}
+.listamenu li a{
+    display: block;
+    background-color: rgb(128, 128, 128, 0.3);
+    padding: 10px;
+    text-decoration-line: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: white;
+    letter-spacing: 2px;
+}
+.listamenu li a:hover{
+    background-color: rgb(128, 128, 128, 0.6);
+}
+
+.tituloheader h1{
+    text-transform: uppercase;
+    font-size: 46px;
+    text-shadow: 5px 5px 4px #333;
+}
+main{
+    width: 80%;
+    margin: auto;
+}
+.content-section{
+    display: flex;
+    background-color: white;
+    margin-top: 15px;
+    justify-content: space-between;
+    padding: px;
+    
+    
+}
+
+.card{
+    margin: 10px 20px;
+    text-align: center;
+    background-color: rgb(65, 64, 64);
+}
+
+article{
+    color: black;
+    width: 100%;
+    padding: 0 15px;
+}
+article h2{
+    padding: 10px;
+    background-color: rgb(128, 128, 128, 0.3);
+    border-bottom: solid 2px gray ;
+}
+
+footer{
+    background-color: rgb(88, 87, 87);
+    text-align: center;
+    line-height: 150px;
+    height: 150px;
+    font-size: 20px;
+}
+footer p{
+    text-shadow: 5px 5px 4px #333;
+}
