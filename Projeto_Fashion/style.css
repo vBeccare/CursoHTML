@@ -1,0 +1,122 @@
+.container{
+    max-width: 1280px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    font-family:tahoma,sans-serif ;
+}
+.header-top{
+    margin-top: 5%;
+    background-image: url(/Projeto_Fashion/imagens/topo.jpg);
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    background-color: #162028;
+    height: 50px;
+}
+.logo{
+    position: absolute;
+    left: 200px;
+    margin-top: 5px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #425564;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    transition: color 0.3s linear;
+}
+nav ul li a:hover{
+    color: white;
+    
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 15px;
+    padding: 18px;
+    
+}
+nav ul{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: right;
+}
+main{
+    padding: 50px 10%;
+    text-align: center;
+}
+main h1{
+    font-size: 50px;
+}
+
+main p{
+    line-height: 2.5;
+    font-size: 18px;
+}
+.galeria{
+    display: inline-block;
+    width: 100%;
+}
+.card{
+    width: 30%;
+    float: left;
+    margin: 12px;
+    margin-top: 30px;
+}
+.card img{
+    width: 100%;
+}
+.card h2{
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.article-blue{
+    background-color: #003d52;
+    background-image: url(/Projeto_Fashion/imagens/bg_detalhe.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    
+    padding: 10%;
+    color: white;
+}
+.article-blue h1{
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.article-blue p{
+    width: 60%;
+    font-size: 20px;
+    line-height: 1.5;
+}
+address{
+    color: #143f52;
+    margin-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-style: normal;
+}
+footer{
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    line-height: 80px;
+    height: 80px;
+    font-size: 20px;
+}
+footer p{
+    color: rgb(36, 128, 128);
+    letter-spacing: 3px;
+}
