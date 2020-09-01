@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario login</title>
+    <style>
+        .formLogin{
+            width: 250px;
+            margin: 50px auto;
+        }
+        .formLogin label{
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+        #User, #pass, .btl{
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        #User:focus, #pass:focus{
+            background-color: bisque;
+        }
+        .btl{
+            margin-top: 15px;
+        }
+        #User{
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de um formulario</h1>
+    <form action="#" method="POST" class="formLogin">
+        <fieldset>
+            <legend>login</legend>
+            <label for="User">Usuario</label>
+            <input id="User" type="text" name="user" autofocus>
+            <label for="pass">Senha</label>
+            <input id="pass" type="password" name="pass">
+            <input type="submit" value="Logar" class="btl">
+        </fieldset>
+    </form>
+    
+</body>
