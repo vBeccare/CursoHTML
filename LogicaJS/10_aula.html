@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logica de programação JS</title>
+</head>
+<body>
+    <h1>Logica de programação com JavaScript</h1>
+
+    <script>
+       
+        var n1=prompt("Digite um numero:");
+        n1= parseInt(n1)
+        var tbda = 1
+        for(var i= 1; i <=1000; i++){
+            document.write(n1 + "x" + tbda + " = " + n1*tbda + '<br>');
+            if(tbda%10 === 0){
+                document.write('<hr>')
+            }
+            tbda++
+            
+        }
+        
+    </script>
+</body>
+</html>

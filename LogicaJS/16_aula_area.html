@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logica de programação JS</title>
+</head>
+<body>
+
+    <h1>Logica de programação com JavaScript</h1>
+    <button onclick="areaAlert()">Area no alert</button>
+    <button onclick="areaHtml()">Area no html</button>
+    
+
+    <div id="output">
+
+    </div>
+
+
+
+    <script>
+    
+        function areaAlert(){
+
+            var largura = parseFloat(prompt('Digite a largura'));
+
+            var altura = parseFloat(prompt('Digite a altura'));
+
+            var areaT = area(largura, altura);
+            alert("Area:" + areaT);
+        }
+        function areaHtml(){
+
+            var largura = parseFloat(prompt('Digite a largura'));
+
+            var altura = parseFloat(prompt('Digite a altura'));
+
+            var areaT = area(largura, altura);
+             document.querySelector('#output').innerHTML = "Area:" + areaT;
+            
+        }
+
+        function area(l, a){
+            return l * a;
+        }
+        
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logica de programação JS</title>
+</head>
+<body>
+    <h1>Logica de programação com JavaScript</h1>
+
+    <script>
+       
+        var n1=prompt("Digite um numero:");
+        n1= parseFloat(n1)
+       
+        var n2=parseFloat(prompt("Digite outro numero:"));
+        var media = (n1 + n2) / 2;
+        var corte;
+
+        if( media <= 5 || n1 < 1 || n2 < 1){
+            corte = "Você foi reprovado"
+        }else{
+            corte = "Você foi aprovado"
+        }
+
+        alert("A media de " + n1 + " + " + n2 + " = " + media + " " + corte);
+    
+
+    
+       
+    </script>
+</body>
+</html>
