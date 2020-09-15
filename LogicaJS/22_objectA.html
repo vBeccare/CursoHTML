@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logica de programação JS</title>
+</head>
+<body>
+    <h1>Logica de programação com JavaScript</h1>
+    <div id="output">
+
+    </div>
+    <script>
+       
+       var produtos = [
+           {"Nome" : "caneta", "preco" : 2},
+           {"Nome" : "lapis", "preco" : 1.2},
+           {"Nome" : "borracha", "preco" : 0.5}
+        ];
+
+        var msg = "";
+
+        for(var i= 0; i <produtos.length; i++){
+
+            msg += "<h2> Produto: " + produtos[i].Nome + "</h2>"; 
+            msg += "<p>Preço: R$ " + produtos[i].preco + "</p>";
+        }
+
+        document.querySelector('#output').innerHTML = msg;
+    </script>
+</body>
+</html>

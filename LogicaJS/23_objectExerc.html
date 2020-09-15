@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logica de programação JS</title>
+</head>
+<body>
+    <h1>Logica de programação com JavaScript</h1>
+    <div id="output">
+
+    </div>
+    <script>
+       
+       var usuario = [
+           {"Nome" : "Carlos", "email" : "carlitos@gmail.com" },
+           {"Nome" : "Mario", "email" : "mario_123@hotmail.com"},
+           {"Nome" : "Luiz", "email" : "LuizMNS@outlook.com"}
+        ];
+
+        var msg = "";
+
+        for(var i= 0; i <usuario.length; i++){
+
+            msg += "<h2> Nome: " + usuario[i].Nome + "</h2>"; 
+            msg += "<p>E-mail: " + usuario[i].email + "</p>";
+        }
+
+        document.querySelector('#output').innerHTML = msg;
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logica de programação JS</title>
+</head>
+<body>
+
+    <h1>Logica de programação com JavaScript</h1>
+    <button onclick="iCalc('+')">+</button>
+    <button onclick="iCalc('*')">*</button>
+    <button onclick="iCalc('-')">-</button>
+    <button onclick="iCalc('/')">/</button>
+
+    <div id="output">
+
+    </div>
+
+
+
+    <script>
+        var numi = parseFloat(prompt('Digite um numero'));
+        escreve(numi);
+
+        function iCalc(c){
+            var n1 = parseFloat(document.querySelector('#output').textContent);
+
+            var n2 = parseFloat(prompt('Digite um numero'));
+            try{
+                var msg = calcular(c, n1, n2);
+            } catch(e){
+                alert(e);
+                return;
+            }
+            escreve(msg);
+        }
+        function escreve(n){
+        var output = document.querySelector('#output');
+        output.innerHTML = n;
+        }
+       
+        function calcular(c, n1, n2){
+            if(c !== '+' && c !== '-' && c !== '*' && c !== '/'){
+                throw new Error('Digite um simbolo valido');
+            
+            }
+            if(isNaN(n1) || isNaN(n2)){
+                throw new Error('Passe somente numeros');
+            }
+            var numCalc = null;
+            switch(c){
+                case '+':
+                numCalc = n1 + n2;
+                break;
+                case '-':
+                numCalc = n1 - n2;
+                break;
+                case '*':
+                numCalc = n1 * n2;
+                break;
+                case '/':
+                numCalc = n1 / n2;
+        
+            }
+            return numCalc;
+        }
+        
+        
+        
+    </script>
+</body>
+</html>
