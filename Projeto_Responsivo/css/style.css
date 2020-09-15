@@ -2,7 +2,7 @@
 
 html{
     font-family: sans-serif;
-    filter: invert(100%);
+    /* filter: invert(100%); */
     /* filter: hue-rotate(180deg) invert(1); */
 }
 h1, h2, h3, h4, h5, h6{
@@ -37,6 +37,7 @@ h1, h2, h3, h4, h5, h6{
 .icon-play img{
     max-width: 100%;
     max-height: 100%;
+    
 }
 .main-header{
     text-align: center;
@@ -205,10 +206,12 @@ footer{
     .icon-play{
         height: 7em;
     }
+    
     .section-one{
         background-image: url(../images/bg_topo_1600x1374.jpg) ;
         padding: 20em 15em 25em;
         background-position: center top;
+        background-repeat: no-repeat;
     }
     .col-1_4{
         width: 23%;
