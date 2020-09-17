@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Curso Javascript Completo 2018</title>
+        <meta charset="utf-8">      
+          
+    </head>
+    
+    <body>
+        <!-- ADICIONAR LI NOVA -->
+        <div class="container">
+            <h1>Curso Javascript Completo 2018</h1>
+            
+            <input type="text" name="" id="txtTask">
+            <button id='btn'>Cadastrar tarefa</button>
+
+            <ul>
+                <li>Estudar JS-DOM</li>
+                <li>Estudar JS-eventos</li>
+                <li>Jogar</li>
+            </ul>
+           
+        </div>
+        
+        <script>
+            
+            (function(){
+                'use strict';
+                var $ul = document.querySelector('ul');
+                var $btn = document.getElementById('btn');
+                var $txtTask = document.querySelector('#txtTask');
+    
+
+                $btn.addEventListener('click', function(){
+                    var task = '<li>' + $txtTask.value + '</li>';
+                    $ul.innerHTML += task;
+                    $txtTask.value = "";
+                    $txtTask.focus();
+                })
+
+
+            })()
+            
+        </script>
+        
+    </body>
+</html>

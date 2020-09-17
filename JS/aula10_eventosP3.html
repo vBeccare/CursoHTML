@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Curso Javascript Completo 2018</title>
+        <meta charset="utf-8">      
+          
+    </head>
+    
+    <body>
+        <div class="container">
+            <h1>Curso Javascript Completo 2018</h1>
+            
+            <form action="#">
+
+                <textarea  id="contrato" cols="50" rows="10" readonly>Ullamco sit elit esse dolor qui. Occaecat 
+exercitation velit eu consequat officia eiusmod magna esse duis. Aliquip minim 
+proident ad aliquip Lorem laboris nulla ad.</textarea>
+                    <br>
+                <label> <input type="checkbox" name="" id="chk">Li e concordo com os termos</label>
+                <br>
+                    <input id="btn" type="submit" value="Continuar">
+            </form>
+            
+           
+            
+           
+        </div>
+        
+        <script>
+            
+            (function(){
+                var $chk = document.getElementById('chk');
+                var $submit = document.getElementById('btn');
+                
+                 toggleBtn();
+                
+                $chk.addEventListener('change', function(){
+                    toggleBtn();  
+                })
+                function toggleBtn(){
+                    $submit.disabled = !chk.checked;
+                }
+            })()
+            
+        </script>
+        
+    </body>
+</html>

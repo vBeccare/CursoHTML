@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Curso Javascript Completo 2018</title>
+        <meta charset="utf-8">      
+          
+    </head>
+    
+    <body>
+        <div class="container">
+            <h1>Curso Javascript Completo 2018</h1>
+            
+            <textarea name="msg" id="msg" maxlength="150"></textarea>
+            
+            <div id="restaCont" style="display: none;"> Restam <span id="resta" ></span> caracteres
+             </div>
+        </div>
+        
+        <script>
+            
+            (function(){
+                
+                var $txtmsg = document.querySelector('#msg');
+                var $restaCont = document.getElementById('restaCont');
+                var $resta = document.getElementById('resta');
+                var maxima = parseInt($txtmsg.maxLength);
+
+                $resta.textContent = maxima;
+                
+                function mostrarResto(){
+                    $restaCont.style.display = 'block';
+                }
+                mostrarResto();
+                
+                $txtmsg.addEventListener('input', checkLength);
+
+                
+                function checkLength(e){
+                    
+                    var numDigitada = parseInt(this.value.length);
+                    $resta.textContent = maxima - numDigitada;
+                } 
+
+
+
+            })()
+            //    $txtmsg.addEventListener('keypress', keypress);
+            //    $txtmsg.addEventListener('keyup', keyup);
+            //    $txtmsg.addEventListener('keydown', keydown);
+               
+                
+                // function keypress(e){
+                //     console.log('keypress', this.value);    
+                // }
+                
+                // function keyup(e){
+                //     console.log('keyup', this.value); 
+                // }
+                
+                // function keydown(e){
+                //     console.log('keydown', this.value); 
+                // }
+                
+                
+           
+            
+        </script>
+        
+    </body>
+</html>
