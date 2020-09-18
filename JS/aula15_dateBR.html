@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Curso Javascript Completo 2018</title>
+        <meta charset="utf-8">     
+        <style>
+           
+        </style>
+        
+    </head>
+
+    <body>
+       
+        <script>
+            (function(){
+                var dataAtual = new Date();
+                console.log(dataAtual);
+
+
+
+                function dataBR(){
+                var dia = dataAtual.getUTCDate() < 10 ? "0" + dataAtual.getUTCDate() : dataAtual.getUTCDate();
+                var mes = dataAtual.getUTCMonth() + 1;
+                 mes = mes  < 10 ? "0" + mes : mes;
+                var ano = dataAtual.getUTCFullYear();
+                return(dia + '/' + mes + '/' + ano);
+                }
+                alert(dataBR());
+
+            })()
+        </script>
+    </body>
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Curso Javascript Completo 2018</title>
+        <meta charset="utf-8">     
+
+        <script>                    
+            (function(){
+                window.addEventListener('load', init);
+            
+                function init(){
+                    var $paragrafos = document.querySelectorAll('p');
+            
+                    var x = 0;
+                    while($paragrafos[x]){
+                        $paragrafos[x].innerHTML = formatarTexto($paragrafos[x].innerHTML);
+                        x++;
+                    }
+                }
+            
+                function formatarTexto(texto){
+                    var numeroMaximoPalavras = 10;
+                    var arr = texto.split(' ');
+                    console.log(arr);
+                    if(arr.length > numeroMaximoPalavras) {
+                        return arr.slice(0, 10).join(' ') + '...';
+                        
+                    }
+                    
+                    return texto;
+                }
+            })()
+         </script>
+            
+    </head>
+
+    <body>
+        <p>Testando as reticencias</p>
+       <p>Javascript, ipsum dolor sit amet consectetur adipisicing elit. Iure accusamus temporibus architecto, id excepturi ullam. 
+           Voluptas esse mollitia iure  earum fugit, aspernatur temporibus. 
+           Autem quis quaerat cum ad, voluptatem officia.</p>
+       <p>Lorem, ipsum dolor Javascript sit amet consectetur adipisicing elit.
+        Iure accusamus temporibus architecto, id excepturi ullam. 
+        Voluptas esse mollitia iure earum fugit, aspernatur temporibus.
+        Autem quis quaerat cum ad, voluptatem officia.</p>
+       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+           Iure accusamus temporibus architecto, id excepturi ullam. 
+           Voluptas esse mollitia iure earum fugit, aspernatur temporibus. 
+           Autem quis quaerat cum ad, voluptatem officia.</p>
+        
+        <script>
+            
+        </script>
+    </body>
+</html>

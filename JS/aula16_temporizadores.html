@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Curso Javascript Completo 2018</title>
+        <meta charset="utf-8">     
+        <style>
+           
+        </style>
+        
+    </head>
+
+    <body>
+       
+        <script>
+            (function(){
+                var n = 0;
+                function somaUm(){
+                    console.log('N:', ++n);
+
+                    if(n >= 10){
+                        clearInterval(intervalo);
+                    }
+                }
+              setTimeout(somaUm, 1000);
+
+              var intervalo = setInterval(somaUm, 1000);
+
+
+            })()
+        </script>
+    </body>
+</html>

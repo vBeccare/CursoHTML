@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Curso Javascript Completo 2018</title>
+        <meta charset="utf-8">     
+        <style>
+           
+        </style>
+        
+    </head>
+
+    <body>
+       
+        <script>
+            (function(){
+                var dataAtual = new Date();
+                dataAtual.setHours(0);
+                dataAtual.setMinutes(0);
+                dataAtual.setSeconds(0);
+                dataAtual.setMilliseconds(0);
+                var anoAtual = dataAtual.getFullYear();
+
+                var dataNiver = new Date(anoAtual, 11, 19);
+
+                var dataAtualTS = dataAtual.getTime();
+                var dataNiverTS= dataNiver.getTime();
+                if(dataNiverTS === dataAtualTS){
+                    alert('parabens');
+                    return;
+                }
+                if(dataNiverTS < dataAtualTS){
+                    dataNiver.setFullYear(++anoAtual);
+                    dataNiverTS= dataNiver.getTime();
+                }
+
+                const UM_DIA_TS = 24 * 60 * 60 * 1000;
+                var diferenca = dataNiverTS - dataAtualTS;
+                var diasFalta = diferenca/UM_DIA_TS
+                console.log(diasFalta);
+            })()
+        </script>
+    </body>
+</html>
