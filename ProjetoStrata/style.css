@@ -196,7 +196,7 @@ form .col-2:last-child{
     width: 35%;
     padding: 124px 54px 72px;
     box-sizing: border-box;
-    background-image: url(/ProjetoStrata/images/overlay.png), url(/ProjetoStrata/images/bg.jpg);
+    background-image: url(./images/overlay.png), url(./images/bg.jpg);
     background-position: left top;
     background-size: auto, cover;
     text-align: right;
